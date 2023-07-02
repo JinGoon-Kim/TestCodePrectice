@@ -26,5 +26,5 @@ public abstract class ControllerTestSupport {
     protected OrderService orderService;
 
     @MockBean
-    private ProductService productService;
+    protected ProductService productService;
 }

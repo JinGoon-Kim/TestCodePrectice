@@ -25,15 +25,6 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 class ProductControllerTest extends ControllerTestSupport {
 
-    @Autowired
-    private MockMvc mockMvc;
-
-    @Autowired
-    private ObjectMapper objectMapper;
-
-    @MockBean
-    private ProductService productService;
-
     @Test
     @DisplayName("신규 상품을 등록한다.")
     void createProduct() {

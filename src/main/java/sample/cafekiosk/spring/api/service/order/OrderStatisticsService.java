@@ -36,7 +36,7 @@ public class OrderStatisticsService {
                 "no-reply@cafekiosk.com"
                 , email
                 , String.format("[매출통계] %s", orderDate)
-                , String.format("총 매출 합계 %s원 입니다.", totalAmount)
+                , String.format("총 매출 합계는 %s원 입니다.", totalAmount)
         );
 
         if (!result) {

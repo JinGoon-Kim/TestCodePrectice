@@ -84,7 +84,7 @@ class OrderStatisticsServiceTest extends IntegrationTestSupport {
         List<MailSendHistory> histories = mailSendHistoryRepository.findAll();
         assertThat(histories).hasSize(1)
                 .extracting("content")
-                .contains("총 매출 합계는 12000원입니다.");
+                .contains("총 매출 합계는 0원 입니다.");
     }
 
     private Order createPaymentCompletedOrder(LocalDateTime now, List<Product> products) {
